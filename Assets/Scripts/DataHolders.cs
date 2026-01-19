@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataHoldersDemo : MonoBehaviour
+public class DataHolders : MonoBehaviour
 {
     private void Start()
     {
