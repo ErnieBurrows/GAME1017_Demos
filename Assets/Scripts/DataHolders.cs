@@ -95,5 +95,15 @@ public class DataHolders : MonoBehaviour
         }
 
         Debug.Log("Dictionaries are best for lookups: name → clip, id → data, type → prefab.");
+
+
+
+
+        int refVariable;
+
+        void SomeFunction(ref int refVariable)
+        {
+            refVariable = 10;
+        }
     }
 }

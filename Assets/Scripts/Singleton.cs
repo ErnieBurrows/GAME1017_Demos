@@ -1,10 +1,30 @@
 using UnityEngine;
 
-public class Singleton : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    // Static reference to the single instance
-    public static Singleton Instance { get; private set; }
+    private static GameManager instance;
+    public static GameManager Instance 
+    {
+        get
+        {
+            if (instance == null)
+            {
+                // Check if an instance exists in the scene.
+                instance = FindFirstObjectByType<GameManager>();
 
+                // Create a GameObject with Singleton.
+                if (instance == null)
+                {
+                    GameObject singletonObject = new GameObject(nameof(GameManager));
+                    singletonObject.AddComponent<GameManager>();
+                }
+            }
+
+            return instance;   
+        }
+    }  
+
+    // Get the instance => check if its null => if null set the instance
     public int score = 0;
 
     private void Awake()
@@ -17,7 +37,7 @@ public class Singleton : MonoBehaviour
         }
 
         // Set the instance
-        Instance = this;
+        instance = this;
 
         // Keep this object when loading new scenes
         DontDestroyOnLoad(gameObject);

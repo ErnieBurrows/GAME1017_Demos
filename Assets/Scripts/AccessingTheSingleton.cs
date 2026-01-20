@@ -2,16 +2,9 @@ using UnityEngine;
 
 public class AccessingTheSingleton : MonoBehaviour
 {
-    private void Start()
+    [ContextMenu("AddScore")]
+    private void AddScore()
     {
-        // Access the singleton safely
-        if (Singleton.Instance != null)
-        {
-            Singleton.Instance.AddScore(10);
-        }
-        else
-        {
-            Debug.LogError("GameManager instance not found!");
-        }
+        GameManager.Instance.AddScore(10);
     }
 }
