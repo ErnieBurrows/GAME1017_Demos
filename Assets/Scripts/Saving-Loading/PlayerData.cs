@@ -1,16 +1,10 @@
+using System;
 using UnityEngine;
 
-public class PlayerDatae : MonoBehaviour
+[Serializable]
+public class PlayerData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string playerName;
+    public int level;
+    public float health;
 }
