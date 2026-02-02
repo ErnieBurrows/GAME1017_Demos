@@ -537,27 +537,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743456150}
-  - component: {fileID: 743456149}
+  - component: {fileID: 743456151}
   m_Layer: 0
-  m_Name: ScriptableObject1
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &743456149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743456148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d2484133912d449be1062b43d15d96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatsSOReader
-  stats: {fileID: 11400000, guid: 57a8fecd022905344a1b6880a1598e6f, type: 2}
 --- !u!4 &743456150
 Transform:
   m_ObjectHideFlags: 0
@@ -573,6 +560,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &743456151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743456148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6016affec013cf14e83413c01040307a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  playerStatsSO: {fileID: 11400000, guid: 57a8fecd022905344a1b6880a1598e6f, type: 2}
+  playerData:
+    playerName: 
+    level: 0
+    health: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,27 +1380,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1928919227}
-  - component: {fileID: 1928919226}
+  - component: {fileID: 1928919228}
   m_Layer: 0
-  m_Name: ScriptableObject2
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1928919226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928919225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d2484133912d449be1062b43d15d96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatsSOReader
-  stats: {fileID: 11400000, guid: 57a8fecd022905344a1b6880a1598e6f, type: 2}
 --- !u!4 &1928919227
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,6 +1403,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928919228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928919225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6016affec013cf14e83413c01040307a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  playerStatsSO: {fileID: 11400000, guid: 57a8fecd022905344a1b6880a1598e6f, type: 2}
+  playerData:
+    playerName: 
+    level: 0
+    health: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

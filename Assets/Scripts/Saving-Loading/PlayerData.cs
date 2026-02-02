@@ -1,7 +1,4 @@
-using System;
-using UnityEngine;
-
-[Serializable]
+[System.Serializable]
 public class PlayerData
 {
     public string playerName;

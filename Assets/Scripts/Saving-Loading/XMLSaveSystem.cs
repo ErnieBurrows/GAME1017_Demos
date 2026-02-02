@@ -1,12 +1,12 @@
 using System.IO;
 using System.Xml.Serialization;
+using UnityEditor;
 using UnityEngine;
 
 public class XMLSaveSystem : MonoBehaviour
 {
     [SerializeField] PlayerData data;
-    string filePath;
-
+    private string filePath;
 
     void Start()
     {
